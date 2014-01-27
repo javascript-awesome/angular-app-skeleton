@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <title>My AngularJS App</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <!-- In production all css should be concatenated and minified into single css file -->
+</head>
+<body>
+{{app.$state}}
+<a ui-sref="home">Home</a>
+
+<div ui-view></div>
+
+
+<div>Angular skeleton app: v<span app-version></span></div>
+
+<!-- In production all js should be concatenated and minified into single js file -->
+
+<!-- JavaScript vendor files -->
+<script src="../vendor/angular/angular.js"></script>
+<script src="../vendor/angular-ui-router/angular-ui-router.js"></script>
+<script src="../vendor/angular-ui-bootstrap/ui-bootstrap-tpls.js"></script>
+
+<!-- JavaScript application files -->
+<script src="app/app.js"></script>
+<script src="app/appService.js"></script>
+<script src="app/home/home.js"></script>
+<script src="app/home/homeCtrl.js"></script>
+
+<!-- JavaScript common files -->
+<script src="common/common.js"></script>
+<script src="common/services/services.js"></script>
+<script src="common/services/servicesVersion.js"></script>
+<script src="common/directives/directives.js"></script>
+<script src="common/directives/directivesAppVersion.js"></script>
+
+</body>
+</html>
