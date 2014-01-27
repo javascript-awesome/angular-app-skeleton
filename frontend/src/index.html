@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html ng-app="myApp">
+<html ng-app="my-app">
 <head>
     <meta charset="utf-8">
     <title>My AngularJS App</title>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     <!-- In production all css should be concatenated and minified into single css file -->
+    <link rel="stylesheet" href="common/common.css">
 </head>
-<body>
+<body ng-cloak >
 {{app.$state}}
 <a ui-sref="home">Home</a>
 
 <div ui-view></div>
 
 
-<div>Angular skeleton app: v<span app-version></span></div>
+<div>
+    Angular skeleton app: v<span app-version></span>
+</div>
 
 <!-- In production all js should be concatenated and minified into single js file -->
 
@@ -30,10 +33,8 @@
 
 <!-- JavaScript common files -->
 <script src="common/common.js"></script>
-<script src="common/services/services.js"></script>
-<script src="common/services/servicesVersion.js"></script>
-<script src="common/directives/directives.js"></script>
-<script src="common/directives/directivesAppVersion.js"></script>
-
+<script src="common/app-version/app-version.js"></script>
+<script src="common/app-version/app-versionService.js"></script>
+<script src="common/app-version/app-versionDirective.js"></script>
 </body>
 </html>

@@ -2,9 +2,8 @@
     'use strict';
 
     angular
-        .module('myApp.common', [
-            'myApp.common.services',
-            'myApp.common.directives'
+        .module('my-app.common', [
+            'my-app.common.app-version'
         ])
         .config(Config);
 

@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('myApp.home')
+        .module('my-app.home')
         .controller('HomeCtrl', HomeCtrl);
 
     HomeCtrl.$inject = ['$scope'];

@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('myApp.common.directives')
+        .module('my-app.common.app-version')
         .directive('appVersion', AppVersion);
 
     AppVersion.$inject = ['version'];

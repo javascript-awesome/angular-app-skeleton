@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('myApp.common.services', [])
+        .module('my-app.common.app-version', [])
         .config(Config);
 
     Config.$inject = [];

@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('myApp')
+        .module('my-app')
         .service('appService', AppService);
 
     AppService.$inject = ['$state', '$stateParams'];

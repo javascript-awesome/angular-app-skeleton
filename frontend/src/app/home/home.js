@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('myApp.home', [])
+        .module('my-app.home', [])
         .config(Config);
 
     Config.$inject = ['$stateProvider'];
